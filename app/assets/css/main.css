@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&display=swap');
 @import "tailwindcss";
 @import "@nuxt/ui";
 
 @theme static {
   --font-sans: "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-serif: "Noto Serif SC", serif;
   --color-brand-50: #eff8f3;
   --color-brand-100: #dceee3;
   --color-brand-200: #bcddca;
@@ -26,9 +28,14 @@
   --ui-primary: var(--dao-color-primary);
   --ui-bg: var(--dao-color-paper);
   --ui-radius: 0.5rem;
+  /* 柔和投影 · 层级来自光影而非填充色块 */
+  --dao-shadow-soft: 0 1px 2px rgba(18, 63, 60, 0.04), 0 12px 32px -18px rgba(18, 63, 60, 0.14);
+  --dao-shadow-lift: 0 2px 4px rgba(18, 63, 60, 0.05), 0 20px 44px -22px rgba(18, 63, 60, 0.2);
 }
 
 body { margin: 0; }
+
+::selection { background: var(--dao-color-selection); color: var(--dao-color-primary); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; }
