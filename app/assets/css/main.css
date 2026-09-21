@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: "PingFang SC", "Microsoft YaHei", sans-serif;
+  --color-brand-50: #eff8f3;
+  --color-brand-100: #dceee3;
+  --color-brand-200: #bcddca;
+  --color-brand-300: #8ec3a6;
+  --color-brand-400: #5ca381;
+  --color-brand-500: #398563;
+  --color-brand-600: #286a4e;
+  --color-brand-700: #22553f;
+  --color-brand-800: #1e4434;
+  --color-brand-900: #19382c;
+  --color-brand-950: #0c2019;
+}
+
+:root {
+  color-scheme: light;
+  --dao-color-primary: #123f3c;
+  --dao-color-paper: #fcfbf8;
+  --dao-color-soft: #f5f3ee;
+  --dao-color-selection: #dcece8;
+  --dao-color-surface: #ffffff;
+  --ui-primary: var(--dao-color-primary);
+  --ui-bg: var(--dao-color-paper);
+  --ui-radius: 0.5rem;
+}
+
+body { margin: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}
