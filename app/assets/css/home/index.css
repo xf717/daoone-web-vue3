@@ -1,0 +1,33 @@
+.dao-home {
+  --dao-color-primary: #0f1518;
+  --dao-color-soft: #f1f4f3;
+  --dao-color-paper: #f1f4f3;
+  --dao-color-selection: #edf3f1;
+  --ui-primary: #2c6f66;
+  --ui-text: #10171a;
+  --ui-text-highlighted: #10171a;
+  --ui-text-muted: #55646b;
+  --ui-text-dimmed: #65746f;
+  --ui-border: #e7ecec;
+  --ui-bg: #fff;
+  --ui-radius: 0.25rem;
+  --dao-shadow-soft: 0 1px 2px rgb(16 22 25 / 4%), 0 12px 32px -18px rgb(16 22 25 / 14%);
+  --dao-shadow-lift: 0 2px 4px rgb(16 22 25 / 5%), 0 20px 44px -22px rgb(16 22 25 / 14%);
+  color: var(--ui-text);
+}
+
+.dao-home section[id], .dao-home [id='chart-result'] { scroll-margin-top: 100px; }
+.dao-home :is(button, a, input, summary):focus-visible { outline: 2px solid #2c6f66; outline-offset: 3px; }
+.dao-home .home-action { background: #0f1518; color: #fff; }
+.dao-home .home-action:hover { background: #253035; }
+.dao-home .home-action:disabled { background: #dce3e0; color: #65746f; }
+.dao-home .home-control { height: 48px; border-radius: 12px; padding-inline: 16px; font-size: 15px; background: #fff; }
+.dao-home .home-control:not([aria-invalid='true']) { --tw-ring-color: #83958f; }
+.dao-home .home-control::placeholder { color: #65746f; }
+.dao-home .home-control:focus-visible { outline-offset: 2px; }
+.dao-home .home-field-label { font-size: 13px; font-weight: 500; }
+.dao-home .home-button { min-height: 48px; border-radius: 12px; padding-inline: 16px; font-size: 15px; }
+.dao-home .home-details summary { cursor: pointer; list-style: none; }
+.dao-home .home-details summary::-webkit-details-marker { display: none; }
+.dao-home .home-details summary::after { content: '+'; float: right; padding-left: 16px; }
+.dao-home .home-details[open] summary::after { content: '−'; }
